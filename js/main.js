@@ -79,8 +79,6 @@ var prices = items.map( function (item) {
 
 //Filter prices between 14 and 18
 
- 
-
 var prices = items.filter (function (item) {
   return (item.price > 14) && (item.price < 18);
 
@@ -89,26 +87,22 @@ var prices = items.filter (function (item) {
  console.log(prices);
 
 
- // For each item show on page answer 2
-
-// items.forEach (function (item) {
-//   return 
-//   )
-// }
+ // For each item make a string
 
 
+var str = items.forEach (function (item) {
+  return (item.title);
+  
+});
 
-// Make it a string
+   console.log(str);
 
-// var str = 'The average price is $' + converted;
-// console.log(str);
+// // Make it show up on the page
 
-// Make it show up on the page
+var answer2 = document.querySelector('#answer2');
+var textNode = document.createTextNode(str);
 
-// var answer2 = document.querySelector('#answer2');
-// var textNode = document.createTextNode(str);
-
-// answer2.appendChild(textNode);
+answer2.appendChild(textNode);
 
 
 }());
