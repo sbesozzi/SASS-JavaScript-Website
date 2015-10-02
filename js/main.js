@@ -9,7 +9,7 @@
 
 // Create an array of just the prices
 
-var prices = items.map( function (item){
+var prices = items.map( function (item) {
   return item.price;
   
 });
@@ -54,8 +54,6 @@ answer1.appendChild(textNode);
 // *********************************
 // ********* Question #2 ************
 
-// (function () {
-
 // Create an array of the prices
 
 var prices = items.map( function (item) {
@@ -82,18 +80,15 @@ var itemscost = items.filter (function (item) {
 itemscost.forEach (function (item) {
 
   console.log(item.title);
-  // return item.title;
   var textNode = document.createTextNode(item.title);
 
 answer2.appendChild(textNode);
-});
 
+});
 
 
 // **********************************
 // ************ Question 3 **********
-
-
 
 
  //Find GBP in array
@@ -104,6 +99,9 @@ answer2.appendChild(textNode);
 });
 
  console.log(britishitems);
+
+ // var str = britishitems + ' costs £18';
+ //  console.log(str);
 
 
 // Make it show up on the page
@@ -119,7 +117,6 @@ var textNode = document.createTextNode(item.title);
 answer3.appendChild(textNode);
 
 });
-
 
 
 // *****************************
@@ -164,7 +161,7 @@ console.log(materialItems);
 
 // Show item.name, # of item.materials length and item.materials
 
-var answer5= document.querySelector('#answer5');
+var answer5 = document.querySelector('#answer5');
 
 
 materialItems.forEach (function (item) {
@@ -177,7 +174,6 @@ var textNode = document.createTextNode(item.title);
 answer5.appendChild(textNode);
 
 });
-
 
 // *************************************
 // ************** Question 6 ***********
@@ -200,15 +196,10 @@ var str = sellerMade.length + ' were made by their sellers';
 
 // Make it show up on the page
 
-
 var answer6 = document.querySelector('#answer6');
-
-  
 var textNode = document.createTextNode(str);
 
 answer6.appendChild(textNode);
-
-});
 
 }());
 
