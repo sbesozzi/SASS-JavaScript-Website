@@ -89,13 +89,13 @@ var prices = items.filter (function (item) {
 
  // For each item make a string
 
-
 var str = items.forEach (function (item) {
   return (item.title);
   
 });
 
    console.log(str);
+
 
 // // Make it show up on the page
 
@@ -106,3 +106,53 @@ answer2.appendChild(textNode);
 
 
 }());
+
+
+// ************ Question 3 ********
+
+
+(function () {
+
+// Create an array of the currency
+
+var currency = items.map( function (item) {
+  return item.currency_code;
+  
+});
+
+ console.log(currency);
+
+ //Find GBP in array
+
+ var currency = items.filter (function (item) {
+  return item.currency_code === "GBP";
+
+});
+
+ console.log(currency);
+
+
+// For each item make a string
+
+// var str = item.title + ' costs ' + '£ ' + item.price;
+
+var str = items.list (function (item) {
+  return item.title + ' costs ' + '£ ' + item.price;
+
+});
+
+   console.log(str);
+
+
+
+
+// // Make it show up on the page
+
+var answer3 = document.querySelector('#answer3');
+var textNode = document.createTextNode(str);
+
+answer3.appendChild(textNode);
+
+
+}());
+
