@@ -100,9 +100,6 @@ answer2.appendChild(textNode);
 
  console.log(britishitems);
 
- // var str = britishitems + ' costs £18';
- //  console.log(str);
-
 
 // Make it show up on the page
 
@@ -111,10 +108,15 @@ var answer3 = document.querySelector('#answer3');
 
 britishitems.forEach (function (item) {
   console.log(item.title);
-  
-var textNode = document.createTextNode(item.title);
 
-answer3.appendChild(textNode);
+  // Create sgtring
+
+  var str = item.title + ' costs £18';
+  console.log(str);
+
+  var textNode = document.createTextNode(str);
+
+  answer3.appendChild(textNode);
 
 });
 
@@ -166,10 +168,17 @@ var answer5 = document.querySelector('#answer5');
 
 materialItems.forEach (function (item) {
 
-  console.log(item.title + item.materials.indexOf('Array') + item.materials);
+  console.log(item.title);
+
+   item.materials.forEach (function(material) {
+      console.log(material);
+   });
+
+// var str = item.title + item.materials;
+// console.log(str);
 
 
-var textNode = document.createTextNode(item.title);
+var textNode = document.createTextNode(str);
 
 answer5.appendChild(textNode);
 
@@ -178,7 +187,7 @@ answer5.appendChild(textNode);
 // *************************************
 // ************** Question 6 ***********
 
-//
+
 // Find  seller made in array
 
 var sellerMade = items.filter (function (item) {
