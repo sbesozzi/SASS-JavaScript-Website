@@ -75,14 +75,21 @@ var itemscost = items.filter (function (item) {
 
 
  // For each item make a string
- var answer2 = document.querySelector('#answer2');
+var answer2 = document.querySelector('#answer2');
 
 itemscost.forEach (function (item) {
 
   console.log(item.title);
-  var textNode = document.createTextNode(item.title);
+  
+var textNode = document.createTextNode(item.title);
 
 answer2.appendChild(textNode);
+
+// Create an ELEMENT node
+var lineBreak = document.createElement('br');
+// Append the element node
+answer2.appendChild(lineBreak);
+
 
 });
 
@@ -111,7 +118,7 @@ britishitems.forEach (function (item) {
 
   // Create sgtring
 
-  var str = item.title + ' costs £18';
+  var str = item.title + ' costs &pound 18';
   console.log(str);
 
   var textNode = document.createTextNode(str);
@@ -146,6 +153,10 @@ woodItems.forEach (function (item) {
 var textNode = document.createTextNode(item.title);
 
 answer4.appendChild(textNode);
+
+var lineBreak = document.createElement('br');
+// Append the element node
+answer4.appendChild(lineBreak);
 
 });
 

@@ -1,20 +1,50 @@
-.header-img {
+.container {
   width: 100%;
-  height: 20px; }
+  margin: 20px; }
+
+header {
+  width: 100%;
+  height: 60px; }
 
 .header-text {
   margin: 0;
-  font-size: 15px;
+  padding-top: 10px;
+  font-size: 20px;
   color: #989898; }
 
+.title-image {
+  background-image: url("banner.jpg");
+  height: 120px;
+  width: 100%; }
+
 .questions {
+  background-color: #EEEEEE; }
+
+.answer {
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center; }
+
+.answer-title {
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif; }
+
+.p {
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif; }
 
 footer {
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #4B494E;
   text-align: center; }
 
-footer-text {
-  font-size: 5px; }
+.footer-text {
+  padding-top: 40px;
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  color: white; }
 
 footer-text:before {
   content: "&copy"; }
