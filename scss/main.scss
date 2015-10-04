@@ -1,0 +1,90 @@
+//Color Pallete
+
+// $textFont: 'Roboto Slab', serif;
+
+.container {
+  padding-bottom: 10px;
+  // width: 100%;
+  margin: 10px;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+
+}
+
+.header-text {
+  margin: 0;
+  padding-top: 20px;    
+  padding-left: 30px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #585858;
+  font-weight: 400;
+}
+
+.title {
+  height: 95px; 
+}
+
+  .title-image {
+    background-image: url(https://raw.githubusercontent.com/tiy-atl-js-sept-2015/Assignments/master/Assignment-08*/banner.jpg);
+      height: 95px;
+      width: 100%;
+  }
+
+.questions {
+  display: inline-block;
+}
+
+  .answer {
+   padding-left: 20px;
+   padding-right: 20px;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    background-color: #EEEEEE;
+  }
+
+  .answer-title {
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: #717171;
+  }
+
+  .answer-text {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: semi-bold 600;
+    color: #717171;
+    
+  }
+
+footer {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 85px;
+  background-color: #4B494E;          
+  text-align: center;
+}
+
+  .footer-text {
+    margin: 0;
+    padding-top: 60px;
+    font-size: 10px;
+    font-family:'Open Sans', sans-serif; 
+    font-weight:  100;
+    color: #9C9C9C;
+  }
+
+.footer-text:before {
+  content: "\00a9";
+}
