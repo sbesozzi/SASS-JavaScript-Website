@@ -3,78 +3,88 @@
 // $textFont: 'Roboto Slab', serif;
 
 .container {
+  padding-bottom: 10px;
   width: 100%;
-  margin: 20px;
+  margin: 10px;
 }
 
 header {
   width: 100%;
-  height: 50px;
+  height: 55px;
 
 }
 
 .header-text {
   margin: 0;
-  padding-top: 10px;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;  color: #989898;
-  font-weight: 300;
+  padding-top: 20px;    
+  padding-left: 30px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #585858;
+  font-weight: 400;
 }
 
 .title {
-
-  
- 
+  height: 95px; 
 }
 
   .title-image {
-  }
-
-    img.expand { 
     background-image: url(https://raw.githubusercontent.com/tiy-atl-js-sept-2015/Assignments/master/Assignment-08*/banner.jpg);
-    height: 100%;
-    width: 100%;
+      height: 95px;
+      width: 100%;
   }
-    
-
-
 
 .questions {
-  background-color: #EEEEEE;
+  display: inline-block;
 }
 
-.answer {
-  text-align: center;
-  padding-bottom: 35px;
-}
+  .answer {
+   padding-left: 20px;
+   padding-right: 20px;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    background-color: #EEEEEE;
+  }
 
-.answer-title{
-  margin-bottom: 0;
-  font-size: 25px;
-  font-family: 'Roboto Slab', serif;;
+  .answer-title {
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 25px;
+    color: #717171;
+  }
 
-}
-  .p {
-    font-size: 15px;
-    font-family: 'Roboto Slab', serif;;
+  .answer-text {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: semi-bold 600;
+    color: #717171;
+    
   }
 
 footer {
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 85px;
   background-color: #4B494E;          
   text-align: center;
 }
- .footer-text {
-  padding-top: 40px;
-  font-size: 15px;
-  font-family: 'Roboto Slab', serif;
-  color: white
- }
 
+  .footer-text {
+    margin: 0;
+    padding-top: 60px;
+    font-size: 10px;
+    font-family:'Open Sans', sans-serif; 
+    font-weight:  100;
+    color: #9C9C9C;
+  }
 
-footer-text:before {
-  content:"&copy";
+.footer-text:before {
+  content: "\00a9";
 }

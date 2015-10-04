@@ -118,7 +118,7 @@ britishitems.forEach (function (item) {
 
   // Create sgtring
 
-  var str = item.title + ' costs &pound 18';
+  var str = item.title + ' costs \u00A318';
   console.log(str);
 
   var textNode = document.createTextNode(str);
