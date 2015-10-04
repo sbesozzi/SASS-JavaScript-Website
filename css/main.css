@@ -43,7 +43,28 @@ header {
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
   font-size: 25px;
-  color: #717171; }
+  color: #717171;
+  display: inline-block;
+  position: relative; }
+
+.answer-title:before,
+.answer-title:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid #C7C7C7;
+  top: 56px;
+  width: 310px; }
+
+.answer-title:before {
+  right: 100%;
+  margin-right: 15px;
+  margin-left: 40px; }
+
+.answer-title:after {
+  left: 100%;
+  margin-left: 15px;
+  margin-right: 40px; }
 
 .answer-text {
   font-size: 10px;
