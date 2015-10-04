@@ -9,7 +9,7 @@
 
 header {
   width: 100%;
-  height: 60px;
+  height: 50px;
 
 }
 
@@ -17,19 +17,21 @@ header {
   margin: 0;
   padding-top: 10px;
   font-size: 20px;
-  // font-family: $textFont;
-  color: #989898;
+  font-family: 'Open Sans', sans-serif;  color: #989898;
+  font-weight: light 300;
 }
 
 .title {
+
   
  
 }
 
   .title-image {
-    background-image: url("banner.jpg");
-   height: 120px;
+    background-image: url(https://raw.githubusercontent.com/tiy-atl-js-sept-2015/Assignments/master/Assignment-08*/banner.jpg);
+    height: 120px;
     width: 100%;
+    
 
   }
 

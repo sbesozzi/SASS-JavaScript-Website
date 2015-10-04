@@ -142,6 +142,8 @@ britishitems.forEach (function (item) {
  console.log(woodItems);
 
 
+
+
 // Make it show up on the page
 
 var answer4= document.querySelector('#answer4');
@@ -149,8 +151,10 @@ var answer4= document.querySelector('#answer4');
 
 woodItems.forEach (function (item) {
   console.log(item.title);
+
+var str = item.title + ' is made of wood.'
   
-var textNode = document.createTextNode(item.title);
+var textNode = document.createTextNode(str);
 
 answer4.appendChild(textNode);
 
@@ -185,13 +189,20 @@ materialItems.forEach (function (item) {
       console.log(material);
    });
 
-// var str = item.title + item.materials;
-// console.log(str);
+var str = item.title + item.materials;
+console.log(str);
 
 
 var textNode = document.createTextNode(str);
 
 answer5.appendChild(textNode);
+
+// Create element note
+
+var lineBreak = document.createElement('br');
+
+// Append the element node
+answer5.appendChild(lineBreak);
 
 });
 
